@@ -7,7 +7,7 @@ a {
     text-transform: uppercase;
     box-sizing: border-box;
     width: 260px;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
     border: 3px solid orange;
     margin: 20px 15px;
