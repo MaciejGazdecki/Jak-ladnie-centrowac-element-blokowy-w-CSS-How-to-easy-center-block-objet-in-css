@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&subset=latin-ext');
+
 * {
     margin: 0;
     padding: 0;
@@ -26,5 +28,16 @@ ul {
 a {
     display: block;
     color: #bbb;
-    height: 70px;
+    line-height: 3.88888em;
+    padding: 0 40px;
+    width: auto;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    border-right: 2px solid black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul li:nth-last-of-type(1) a{
+    border-right: none;
 }
