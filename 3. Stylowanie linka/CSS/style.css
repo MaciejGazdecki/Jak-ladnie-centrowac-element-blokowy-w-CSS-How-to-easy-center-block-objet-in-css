@@ -11,6 +11,8 @@ a {
     text-align: center;
     border: 3px solid orange;
     margin: 20px 15px;
+    transition: 1s;
+    border-radius: 10px; 
 }
 a:hover{
     background-color: #333;
