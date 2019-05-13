@@ -28,4 +28,5 @@ header {
     height: 40vh;
     background-size: cover;
     background-image: url('../Image/20.jpg');
+    background-position: center;
 }
