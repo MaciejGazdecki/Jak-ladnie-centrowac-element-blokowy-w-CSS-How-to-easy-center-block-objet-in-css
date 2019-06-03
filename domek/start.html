@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Domek</title>
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+        }
+        body {
+            transition: .7s;
+        }
+        span{
+            position: absolute;
+            background-color: saddlebrown;
+            color: white;
+            font-size: 24px;
+            padding: 15px 25px;
+            left: 10%;
+            top: 10%;
+        }
+        div{
+            position: absolute;
+        }
+        div:nth-of-type(1){ /*dach*/
+            width: 0;
+            height: 0;
+            background-color: black;
+            transform: translate(-50%, -50%) rotate(600deg);
+            top: 90%;
+            left: 10%;
+            transition: 1s 0.5s ease-in;
+
+        }
+        div:nth-of-type(2){ /* glowny*/
+            width: 0;
+            height:0;
+            background-color: red;
+            top: 90%;
+            left: 10%;
+            transform: translate(-50%, -50%) rotate(600deg);
+            transition: 0.8s 0.2s ease-in;
+        }
+        div:nth-of-type(3){ /* okno1*/
+            width: 0;
+            height: 0;
+            background-color: yellow;
+            top: 90%;
+            left: 10%;
+            transform: translate(-250%, -90%) rotate(600deg);
+            transition: 1.3s 0.2s ease-in;
+
+        }
+        div:nth-of-type(4){ /*okno2*/
+            width: 0;
+            height: 0;
+            background-color: yellow;
+            top: 90%;
+            left: 10%;
+            transform: translate(150%, -90%) rotate (600deg);
+            transition: 1.3s 0.3s ease-in;
+
+        }
+        div:nth-of-type(5){/*drzwi*/
+            width:0;
+            height: 0;
+            background-color: grey;
+            top: 90%;
+            left: 10%;
+            transform: translate(-50%, 25%) rotate(600deg);
+            transition: 1.4s ease-in;
+        }
+        div:nth-of-type(6){ /*komin*/
+            width: 0;
+            height: 0;
+            background-color: grey;
+            top: 90%;
+            left: 10%;
+            transition: 1.4s ease-in;
+        }
+
+        span:hover~div:nth-of-type(1){ /*dach*/
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            transform: translate(-50%, -88%) rotate(45deg);
+            top: 50%;
+            left: 50%;
+
+        }
+        span:hover~div:nth-of-type(2){ /* glowny*/
+            width: calc(400px*1.414213562);
+            height: 300px;
+            background-color: red;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        span:hover~div:nth-of-type(3){ /* okno1*/
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            top: 50%;
+            left: 50%;
+            transform: translate(-250%, -90%);
+
+        }
+        span:hover~div:nth-of-type(4){ /*okno2*/
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            top: 50%;
+            left: 50%;
+            transform: translate(150%, -90%);
+
+        }
+        span:hover~div:nth-of-type(5){/*drzwi*/
+            width:100px;
+            height: 120px;
+            background-color: grey;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 25%);
+        }
+        span:hover~div:nth-of-type(6){ /*komin*/
+            width: 40px;
+            height: 150px;
+            background-color: grey;
+            top: 50%;
+            left: 50%;
+            transform: translate(250%, -250%);
+            z-index: -1;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <span>BUDUJEMY</span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
