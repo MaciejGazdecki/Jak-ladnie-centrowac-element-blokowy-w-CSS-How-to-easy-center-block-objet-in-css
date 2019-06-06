@@ -84,7 +84,7 @@ footer.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   height: 100%;
+    height: 100%;
 }
 .links a {
     text-decoration: none;
@@ -92,4 +92,31 @@ footer.footer {
     font-size: 18px;
     font-weight: 700;
     padding-right: 20px;
+}
+@media (max-width: 641px) {
+    nav.container {
+        font-size: 20px;
+    }
+    ul.menu {
+        flex-direction: column;
+    }
+    .container {
+        max-width: 100%;
+    }
+    div.links {
+        display: flex;
+        flex-direction: column;
+    }
+    section.main_section {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 170vh;
+    }
+    div.main_Image {
+        width: 80%;
+    }
+    article.articles {
+        width: 80%;
+    }
 }
