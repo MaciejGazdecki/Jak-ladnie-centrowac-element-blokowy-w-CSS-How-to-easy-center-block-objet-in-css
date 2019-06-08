@@ -31,6 +31,11 @@ ul.menu {
 ul.menu li {
     margin-left: 30px;
 }
+.burger {
+    color: white;
+    font-size: 48px;
+    display: none;
+}
 ul.menu a:hover {
     color: red;
 }
@@ -97,8 +102,22 @@ footer.footer {
     nav.container {
         font-size: 20px;
     }
+    .burger {
+        position: fixed;
+        text-align: right;
+        display: flex;
+        top: 4px;
+        right: 8px;
+    }
     ul.menu {
+        position: fixed;
         flex-direction: column;
+        right: 0;
+        top: 60px;
+        background-color: rgba(0,0,0, .3);
+    }
+    .menu li {
+        padding: 8px 0;
     }
     .container {
         max-width: 100%;
@@ -106,6 +125,9 @@ footer.footer {
     div.links {
         display: flex;
         flex-direction: column;
+    }
+    div.links a {
+        padding: 2px 0;
     }
     section.main_section {
         flex-direction: column;
@@ -118,5 +140,8 @@ footer.footer {
     }
     article.articles {
         width: 80%;
+    }
+    .menu.on {
+        display: none;
     }
 }
