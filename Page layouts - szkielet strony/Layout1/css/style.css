@@ -159,4 +159,7 @@ footer.footer {
     .arrow {
         display: block;
     }
+    .arrow.on {
+        display: none;
+    }
 }
