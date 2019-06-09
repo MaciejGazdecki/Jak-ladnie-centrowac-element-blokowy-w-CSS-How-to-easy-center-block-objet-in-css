@@ -34,7 +34,7 @@ ul.menu li {
 }
 .burger {
     color: white;
-    font-size: 48px;
+    font-size: 40px;
     display: none;
 }
 ul.menu a:hover {
@@ -99,6 +99,14 @@ footer.footer {
     font-weight: 700;
     padding-right: 20px;
 }
+.arrow {
+    font-size: 40px;
+    color:black;
+    position: fixed;
+    bottom: 5px;
+    right: 15px;
+    display: none;
+}
 @media (max-width: 641px) {
     nav.container {
         font-size: 20px;
@@ -147,5 +155,8 @@ footer.footer {
     }
     .menu.on {
         display: none;
+    }
+    .arrow {
+        display: block;
     }
 }

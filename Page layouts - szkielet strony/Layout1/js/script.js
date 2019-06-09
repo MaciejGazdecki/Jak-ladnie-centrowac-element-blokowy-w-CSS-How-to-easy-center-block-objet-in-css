@@ -6,3 +6,11 @@ function Showmenu() {
     });
 }
 Showmenu();
+function arrow () {
+    $('.arrow').on('click', function () {
+        $("html").animate({
+            scrollTop: 0,
+        })
+    });
+}
+arrow();
