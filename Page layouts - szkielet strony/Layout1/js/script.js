@@ -11,7 +11,7 @@ function showArrow () {
         if ($(window).scrollTop() > 180) {
             $('.arrow').removeClass('on')
         }
-        if ($(window).scrollTop() < 180) {
+        else {
             $('.arrow').addClass('on')
         }
     });
